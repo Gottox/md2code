@@ -166,7 +166,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "md-src"
+name = "md2src"
 version = "0.1.0"
 dependencies = [
  "clap",
