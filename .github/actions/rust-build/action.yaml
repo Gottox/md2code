@@ -15,6 +15,6 @@ runs:
     with:
       target: ${{ inputs.target }}
       use-cross: ${{ inputs.use-cross }}
-      binaries: md2src
-      archive-prefix: md2src-${{ github.ref_name }}
+      binaries: md2code
+      archive-prefix: md2code-${{ github.ref_name }}
       extra-files: README.md

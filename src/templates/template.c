@@ -16,7 +16,7 @@ static void line_{{$line}}(void) {
 {{   end -}}
 {{ end -}}
 ////////////////////////////////////////////////////////////////////////////////
-int main(int argc, char *argv[]) {
+int main(void) {
 {{- range .segments -}}
 {{   $line := .line -}}
 {{-   with .code }}

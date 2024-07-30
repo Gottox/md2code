@@ -1,4 +1,4 @@
-# md2src
+# md2code
 
 Generates source code from markdown files.
 
@@ -14,7 +14,7 @@ printf("Hello World\n");
 ```
 ````
 
-Run `md2src --lang c --include stdio.h hello-world.md`:
+Run `md2code --lang c --include stdio.h hello-world.md`:
 
 ```c
 #include <stdio.h>

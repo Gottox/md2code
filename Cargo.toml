@@ -1,5 +1,5 @@
 [package]
-name = "md2src"
+name = "md2code"
 version = "0.1.0"
 edition = "2021"
 

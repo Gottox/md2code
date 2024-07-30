@@ -64,7 +64,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: withlazers/container-action@main
       with:
-        repository: md2src
+        repository: md2code
         username: gottox
         password: ${{ secrets.DOCKER_TOKEN }}
 
