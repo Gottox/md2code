@@ -43,7 +43,7 @@ fn main() -> Result<(), Error> {
         ))?
     };
 
-    let content = Gen::new(&lang)?.generate(&input, opts.include)?;
+    let content = Gen::new(lang)?.generate(&input, opts.include)?;
 
     let mut out: Box<dyn Write> = if opts.output == "-" {
         Box::new(std::io::stdout())

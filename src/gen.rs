@@ -70,7 +70,7 @@ gtmpl_fn! {
     ) -> Result<Value, FuncError> {
         Ok(value
             .lines()
-            .map(|line| format!("{}{}\n", prefix, line))
+            .flat_map(|line| [prefix.as_str(), line, "\n"])
             .collect::<String>()
             .into())
     }
@@ -90,7 +90,7 @@ impl Gen {
         include: Vec<String>,
     ) -> Result<String, Error> {
         let root = markdown::to_mdast(
-            &input,
+            input,
             &ParseOptions {
                 constructs: CONSTRUCTS,
                 ..Default::default()
